@@ -31,6 +31,6 @@ public class ProdutoUsado extends Produto {
 		return getNome()
 				+" (USADO) - R$"
 				+String.format("%.2f",getPreco())
-				+" - Data de fabricação"+sdf.format(data);
+				+" - Data de fabricação: "+sdf.format(data);
 	}
 }

@@ -28,9 +28,9 @@ public class ProdutoImportado extends Produto{
 	@Override
 	public String etiquetaDePreco() {
 		return getNome()
-				+" - $"
+				+" - R$"
 				+String.format("%.2f",valorTotal())
-				+" - TAXA DE IMPORTAÇÃO:"
+				+" - TAXA DE IMPORTAÇÃO: R$"
 				+ String.format("%.2f",taxaDeImportacao);
 	}
 }

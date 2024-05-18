@@ -30,6 +30,6 @@ public class Produto {
 	}
 	
 	public String etiquetaDePreco() {
-		return nome + " - $"+ String.format("%.2f",preco);
+		return nome + " - R$"+ String.format("%.2f",preco);
 	}
 }
