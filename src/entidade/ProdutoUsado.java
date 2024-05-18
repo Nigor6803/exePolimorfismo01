@@ -28,6 +28,9 @@ public class ProdutoUsado extends Produto {
 	
 	@Override
 	public String etiquetaDePreco() {
-		return super.etiquetaDePreco()+"Data de fabricação"+sdf.format(data);
+		return getNome()
+				+" (USADO) - R$"
+				+String.format("%.2f",getPreco())
+				+" - Data de fabricação"+sdf.format(data);
 	}
 }
